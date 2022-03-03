@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+        button:hover {
+            transition-duration: 500ms;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body onload="onLoadPageToUpdateInformation()">
+    <h1>
+        JavaScript Course Window Location
+    </h1>
+    <p id="description">
+        This is for showing us how to learn JavaScript
+    </p>
+    <form onsubmit="submitForm(event)">
+        <input class="myInput" id="username" name="username" placeholder="username" />
+        <br>
+        <input class="myInput" id="password" name="password" type="password" placeholder="password" />
+        <br>
+        <input class="myInput" id="birthday" name="birthday" type="date" placeholder="birthday"
+            onchange="onBirthdayChange(event)" />
+        <br>
+        <button type="submit">
+            submit
+        </button>
+        <br>
+        <button type="button" onclick="goToGoogle()">
+            Go to Google
+        </button>
+    </form>
+    <div id="fa-today"></div>
+    <div id="information"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+        integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
