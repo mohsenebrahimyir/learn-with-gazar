@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"
+        integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="onLoadCounter()">
+    <h1> JavaScript Counter </h1>
+    <p id="description">
+        This project is written with JavaScript
+    </p>
+
+    <div id="counter">
+        0
+    </div>
+    <div id="buttons">
+        <button onclick="start()" type="button" class="start">
+            Start
+        </button>
+        <button disabled onclick="pause()" type="button" class="pause">
+            Pause
+        </button>
+        <button onclick="reset()" type="button" class="reset">
+            Reset
+        </button>
+    </div>
+</body>
+
+</html>
